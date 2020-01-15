@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -20,7 +21,7 @@ RecyclerView.Adapter<UserAdapter.ViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bindItem(userList[position].name,userList[position].title)
+        holder.bindItem(userList[position].name,userList[position].title,userList[position].image)
     }
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView),
@@ -29,11 +30,12 @@ RecyclerView.Adapter<UserAdapter.ViewHolder>(){
         //attribute
         val textName = itemView.findViewById<TextView>(R.id.textName)
         val textTitle = itemView.findViewById<TextView>(R.id.textTitle)
+        val img = itemView.findViewById<ImageView>(R.id.imageView)
 
-
-        fun bindItem(name:String,title:String){
+        fun bindItem(name:String,title:String,image:Int){
             textName.text = name
             textTitle.text = title
+            img.setImageResource(image)
         }
         override fun onClick(v: View?) {
             Log.d(  "onClick",textName.text.toString()+"click");
