@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val users = ArrayList<User>()
         users.add(User("Sirinat Jariyapun","Miss.",R.drawable.suay))
         users.add(User("Wannaphong Phatthiyaphaibun","Mr.",R.drawable.tontan))
-        users.add(User("NARUBATE PRAROD","Mr.",R.mipmap.ic_launcher))
+        users.add(User("NARUBATE PRAROD","Mr.",R.drawable.m))
         users.add(User("Panat Kum-in","Mr.",R.drawable.phai))
         users.add(User("","Mr.",R.mipmap.ic_launcher))
 
