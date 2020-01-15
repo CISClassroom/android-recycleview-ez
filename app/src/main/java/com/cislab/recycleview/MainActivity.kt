@@ -23,9 +23,9 @@ class MainActivity : AppCompatActivity() {
         val users = ArrayList<User>()
         users.add(User("suay","Mr.",R.mipmap.ic_launcher))
         users.add(User("Wannaphong Phatthiyaphaibun","Mr.",R.drawable.tontan))
-        users.add(User("suay","Mr.",R.mipmap.ic_launcher))
+        users.add(User("MARK","Mr.NARUBATE PRAROD",R.mipmap.ic_launcher))
         users.add(User("Panat Kum-in","Mr.",R.drawable.phai))
-        users.add(User("suay","Mr.",R.mipmap.ic_launcher))
+        users.add(User("","Mr.",R.mipmap.ic_launcher))
 
         var adapter = UserAdapter(users)
         recyclerView.adapter = adapter
