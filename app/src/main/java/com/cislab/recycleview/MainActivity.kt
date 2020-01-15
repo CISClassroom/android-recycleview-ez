@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = linearLayout
 
         val users = ArrayList<User>()
-        users.add(User("suay","Mr.",R.mipmap.ic_launcher))
+        users.add(User("Sirinat Jariyapun","Miss.",R.drawable.suay))
         users.add(User("ต้นตาล","วรรณพงษ์ ภัททิยไพบูลย์",R.drawable.tontan))
         users.add(User("suay","Mr.",R.mipmap.ic_launcher))
         users.add(User("Panat Kum-in","Mr.",R.drawable.phai))
-        users.add(User("suay","Mr.",R.mipmap.ic_launcher))
+        users.add(User("","Mr.",R.mipmap.ic_launcher))
 
         var adapter = UserAdapter(users)
         recyclerView.adapter = adapter
