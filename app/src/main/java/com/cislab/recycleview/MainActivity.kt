@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val users = ArrayList<User>()
         users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
+        users.add(User("ต้นตาล","วรรณพงษ์ ภัททิยไพบูลย์"))
         users.add(User("suay","Mr."))
         users.add(User("Panat Kum-in","Mr."))
         users.add(User("suay","Mr."))
