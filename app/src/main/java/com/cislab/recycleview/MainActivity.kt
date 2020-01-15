@@ -23,11 +23,10 @@ class MainActivity : AppCompatActivity() {
         val users = ArrayList<User>()
         users.add(User("suay","Mr."))
         users.add(User("suay","Mr."))
+        users.add(User("suay","Miss.Sirinat Jariyapun"))
+        users.add(User("Suay",""))
         users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
+
 
         var adapter = UserAdapter(users)
         recyclerView.adapter = adapter

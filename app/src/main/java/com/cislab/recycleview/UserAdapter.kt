@@ -30,6 +30,7 @@ RecyclerView.Adapter<UserAdapter.ViewHolder>(){
         val textName = itemView.findViewById<TextView>(R.id.textName)
         val textTitle = itemView.findViewById<TextView>(R.id.textTitle)
 
+
         fun bindItem(name:String,title:String){
             textName.text = name
             textTitle.text = title
