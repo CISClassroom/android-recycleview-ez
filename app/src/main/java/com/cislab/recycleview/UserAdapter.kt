@@ -21,7 +21,7 @@ RecyclerView.Adapter<UserAdapter.ViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bindItem(userList[position].name,userList[position].title)
+        holder.bindItem(userList[position].name,userList[position].title,userList[position].image)
     }
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView),
@@ -32,10 +32,10 @@ RecyclerView.Adapter<UserAdapter.ViewHolder>(){
         val textTitle = itemView.findViewById<TextView>(R.id.textTitle)
         val img = itemView.findViewById<ImageView>(R.id.imageView)
 
-        fun bindItem(name:String,title:String,Image:Int){
+        fun bindItem(name:String,title:String,image:Int){
             textName.text = name
             textTitle.text = title
-            img.setImageDrawable(Image)
+            img.setImageResource(image)
         }
         override fun onClick(v: View?) {
             Log.d(  "onClick",textName.text.toString()+"click");
