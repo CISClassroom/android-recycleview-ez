@@ -24,9 +24,7 @@ class MainActivity : AppCompatActivity() {
         users.add(User("suay","Mr."))
         users.add(User("suay","Mr."))
         users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
-        users.add(User("suay","Mr."))
+        users.add(User("Panat Kum-in","Mr."))
         users.add(User("suay","Mr."))
 
         var adapter = UserAdapter(users)
