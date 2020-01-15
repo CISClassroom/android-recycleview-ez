@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         users.add(User("Wannaphong Phatthiyaphaibun","Mr.",R.drawable.tontan))
         users.add(User("NARUBATE PRAROD","Mr.",R.drawable.m))
         users.add(User("Panat Kum-in","Mr.",R.drawable.phai))
-        users.add(User("","Mr.",R.mipmap.ic_launcher))
+        users.add(User("Atittaya Chimmakaew","Miss.",R.drawable.fah))
 
         var adapter = UserAdapter(users)
         recyclerView.adapter = adapter
